@@ -7,25 +7,25 @@ const useAutoService = () => {
      
     const getStocks = async () => {
       
-        const res = await request(`http://f9fd09879062.vps.myjino.ru:49207/api/stock`) 
+        const res = await request(`https://f9fd09879062.vps.myjino.ru:49207/api/stock`) 
         return res
       
     }
 
     const getModels = async () => {
       
-        const res = await request(`http://f9fd09879062.vps.myjino.ru:49207/api/brands`) 
+        const res = await request(`https://f9fd09879062.vps.myjino.ru:49207/api/brands`) 
         return res
       
     }
 
     const getModel = async (brandName) => { 
-        const res = await request(`http://f9fd09879062.vps.myjino.ru:49207/api/brands/${brandName}`) 
+        const res = await request(`https://f9fd09879062.vps.myjino.ru:49207/api/brands/${brandName}`) 
         return res 
     }
 
     const getBrands = async (brandName, models) => { 
-        const res = await request(`http://f9fd09879062.vps.myjino.ru:49207/api/brands/${brandName}/models?models=${models}`) 
+        const res = await request(`https://f9fd09879062.vps.myjino.ru:49207/api/brands/${brandName}/models?models=${models}`) 
         return res 
     }
     
