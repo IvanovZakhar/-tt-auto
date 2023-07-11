@@ -1,0 +1,21 @@
+
+.models-links{
+    display: flex;
+    list-style: none;
+    li{
+        margin-left: 10px;
+        color: #1677ff; 
+        cursor: pointer;
+        span{
+            font-size: 12px;
+            font-weight: normal;
+            color: rgba(0, 0, 0, 0.88);
+        }
+    }
+    .active{
+        color: #0958d9;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+}
